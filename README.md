@@ -4,6 +4,7 @@ This is a minimal FullStack Web Application, whose primary function will be a cl
 
 ## Tech Stack
 
+* [Yarn](https://yarnpkg.com/) as the default package manager
 * [React](https://reactjs.org) with [TypeScript](typescriptlang.org)
 * [Firebase](https://firebase.google.com) for Authentication, Object Storage and Database
 * [Vercel's](https://vercel.com) serverless functions for API Routes
