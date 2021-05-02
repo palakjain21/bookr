@@ -4,16 +4,18 @@ This is a minimal FullStack Web Application, whose primary function will be a cl
 
 ## Tech Stack
 
-* [Yarn](https://yarnpkg.com/) as the default package manager
-* [React](https://reactjs.org) with [TypeScript](typescriptlang.org)
-* [Firebase](https://firebase.google.com) for Authentication, Object Storage and Database
-* [Vercel's](https://vercel.com) serverless functions for API Routes
+- [Yarn](https://yarnpkg.com/) as the default package manager
+- [ReactJS](https://reactjs.org) with [TypeScript](typescriptlang.org)
+- [SASS](https://sass-lang.com/) for writing styles
+- [Firebase](https://firebase.google.com) for Authentication, Object Storage and Database
+- [Vercel's](https://vercel.com) serverless functions for API Routes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Contributing
 
 You'll need a basic knowledge of atleast one of the tech stacks mentioned above, as issues can require knowledge of a single one of them, or a combination of some.
+
 ## How to run locally
 
 1. Fork and clone the repo
@@ -25,4 +27,3 @@ You'll need a basic knowledge of atleast one of the tech stacks mentioned above,
 
 1. Add automated testing
 2. Expand features and add support for other formats too like EPUB.
-
