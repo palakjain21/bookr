@@ -3,7 +3,7 @@
   justify-content: flex-end;
 
   float: right;
-  padding: 20px 20px;
+  padding: 20px;
   cursor: pointer;
   font-family: Raleway sans-serif serif;
   font-size: 14px;
@@ -17,11 +17,12 @@
   box-sizing: border-box;
   padding: 10px;
   box-shadow: #33272a 1px 1px 1px;
+  &:hover {
+    background-color: #33272a;
+    color: white;
+  }
 }
-.signin:hover {
-  background-color: #33272a;
-  color: white;
-}
+
 .register {
   padding: 20px;
 }

@@ -4,8 +4,8 @@ import './Header.scss'
 function Header() {
     return (
         <nav className="header">
-            <a  className="register ">Register</a>
-            <a  className="signin ">SIGN IN</a>   
+            <p className="register ">Register</p>
+            <p  className="signin ">SIGN IN</p>   
         </nav>
     )
 }
