@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  cursor: pointer;
+  padding: 10px;
+
   font-family: Raleway, sans-serif;
   font-size: 14px;
   align-items: center;
@@ -14,16 +14,31 @@
     padding: 20px;
     color: var(--headline-color);
     font-family: NATS, sans-serif;
+    cursor: pointer;
+
+    span {
+      margin: 0;
+      margin-left: 6px;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
   }
+
   .navbar {
     display: flex;
     align-items: center;
     text-align: center;
+
+    p {
+      cursor: pointer;
+    }
+
     .signin {
       border: 1px solid var(--headline-color);
       box-sizing: border-box;
-      padding: 10px;
-      box-shadow: var(--headline-color) 1px 1px 1px;
+      padding: 10px 20px;
+
       &:hover {
         background-color: var(--headline-color);
         color: #faeee7;
@@ -31,7 +46,8 @@
     }
 
     .register {
-      padding: 20px;
+      margin: 20px;
+      font-size: 1.2em;
     }
   }
 }
@@ -40,6 +56,7 @@
   .Header {
     display: block;
   }
+
   .navbar {
     display: block;
     text-align: left;

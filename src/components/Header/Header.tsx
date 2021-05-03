@@ -1,12 +1,12 @@
 import './Header.scss';
-import logo from './logo.png';
+import logo from '../../assets/logo.png';
 
 function Header() {
   return (
     <nav className="header">
       <div className="logo">
         <img src={logo} alt="logo" />
-        <h2>BOOK-R</h2>
+        <span>BOOK-R</span>
       </div>
       <div className="navbar">
         <p className="register ">Register</p>
