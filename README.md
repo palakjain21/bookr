@@ -6,7 +6,7 @@ This is a minimal FullStack Web Application, whose primary function will be a cl
 
 - [Yarn](https://yarnpkg.com/) as the default package manager
 - [ReactJS](https://reactjs.org) with [TypeScript](typescriptlang.org)
-- [SASS](https://sass-lang.com/) for writing styles
+- [SCSS](https://sass-lang.com/) for writing styles
 - [Firebase](https://firebase.google.com) for Authentication, Object Storage and Database
 - [Vercel's](https://vercel.com) serverless functions for API Routes
 
