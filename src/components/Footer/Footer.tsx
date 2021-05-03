@@ -4,7 +4,7 @@ import './Footer.scss'
 function Footer() {
     return (
         <div className="footer">
-            <p>Made with love by github</p>
+            <p>Made with 💕 at Github !</p>
         
      </div>
     )

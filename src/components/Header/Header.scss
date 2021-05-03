@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 .header {
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
-  margin-top: 20px;
+
   float: right;
-  padding: 10px;
+  padding: 20px 20px;
   cursor: pointer;
-  font-family: Raleway;
+  font-family: Raleway sans-serif serif;
   font-size: 14px;
   align-items: center;
   text-align: center;
@@ -18,9 +16,15 @@
   border: 1px solid #33272a;
   box-sizing: border-box;
   padding: 10px;
-  margin: 10px;
+  box-shadow: #33272a 1px 1px 1px;
 }
-
+.signin:hover {
+  background-color: #33272a;
+  color: white;
+}
+.register {
+  padding: 20px;
+}
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .Header {
     display: block;

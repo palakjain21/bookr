@@ -3,11 +3,10 @@ import './Header.scss'
 
 function Header() {
     return (
-        <div className="header">
-            <nav className="register ">Register</nav>
-            <nav className="signin ">SIGN IN</nav>
-            
-        </div>
+        <nav className="header">
+            <a  className="register ">Register</a>
+            <a  className="signin ">SIGN IN</a>   
+        </nav>
     )
 }
 
