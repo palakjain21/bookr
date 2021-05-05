@@ -1,23 +1,8 @@
-.books {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  .hero {
-    height: auto;
-    width: 300px;
-    left: 842px;
-    top: 157px;
-    border-radius: 0px;
-    margin-right: 100px;
-  }
-}
-
 .text {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 4vw;
+  line-height: 1em;
   display: flex;
   text-align: left;
   align-items: center;
@@ -25,9 +10,42 @@
   color: #33272a;
 
   span {
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 0.7em;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+
+  .books {
+    height: auto;
+    width: 45%;
+    left: 842px;
+    top: 157px;
+    border-radius: 0px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .books {
+    width: 100%;
+    height: auto;
+  }
+  .hero {
+    margin-left: 0px;
+  }
+
+  .text {
+    display: block;
+    text-align: left;
+    font-size: 28px;
   }
 }
