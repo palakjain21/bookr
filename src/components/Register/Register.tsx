@@ -7,7 +7,8 @@ const Register = () => {
     email: '',
     password: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  // eslint-disable-next-line
+  const [_, setSubmitted] = useState(false);
   const handleSubmit = (event: any) => {
     event.preventDefault();
     setSubmitted(true);

@@ -6,19 +6,22 @@ const Signin = () => {
     email: '',
     password: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  // eslint-disable-next-line
+  const [_, setSubmitted] = useState(false);
   const handleSubmit = (event: any) => {
     event.preventDefault();
     setSubmitted(true);
   };
 
   const handleEmail = (event: any) => {
+    event.persist();
     setValues((values) => ({
       ...values,
       email: event.target.value,
     }));
   };
   const handlePassword = (event: any) => {
+    event.persist();
     setValues((values) => ({
       ...values,
       password: event.target.value,
