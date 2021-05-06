@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import './Signin.scss';
+import '../../Forms/Forms.scss';
 
-const Signin = () => {
+const Register = () => {
   const [values, setValues] = useState({
+    name: '',
     email: '',
     password: '',
   });
@@ -13,6 +14,13 @@ const Signin = () => {
     setSubmitted(true);
   };
 
+  const handleName = (event: any) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      name: event.target.value,
+    }));
+  };
   const handleEmail = (event: any) => {
     event.persist();
     setValues((values) => ({
@@ -30,14 +38,23 @@ const Signin = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1 className="formheading">ALREADY AN USER?</h1>
+      <h1 className="formheading"> NEW HERE?</h1>
+      <input
+        onChange={handleName}
+        className="formfield"
+        type="name"
+        name="name"
+        id="name"
+        placeholder="Name"
+        value={values.name}
+      />
       <input
         onChange={handleEmail}
         className="formfield"
         type="email"
         name="email-address"
         id="email-address"
-        placeholder="email"
+        placeholder="Email"
         value={values.email}
       />
       <input
@@ -46,12 +63,12 @@ const Signin = () => {
         type="password"
         name="password"
         id="password"
-        placeholder="password"
+        placeholder="Password"
         value={values.password}
       />
-      <input onClick={handleSubmit} className="submit" type="submit" value="SIGN IN" />
+      <input onClick={handleSubmit} className="submit" type="submit" value="REGISTER" />
     </form>
   );
 };
 
-export default Signin;
+export default Register;

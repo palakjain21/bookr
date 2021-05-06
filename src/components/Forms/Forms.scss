@@ -15,6 +15,7 @@
 
   .formfield {
     width: 50%;
+    min-width: 280px;
     padding: 15px;
     border: 1px solid var(--headline-color);
     height: 100%;
@@ -41,7 +42,9 @@
     cursor: pointer;
 
     &:hover {
-      transition: 1s ease-in-out;
+      box-shadow: 0 0px 0px var(--headline-color), 0 1px 1px var(--headline-color),
+        0 2px 2px var(--headline-color), 0 3px 3px var(--headline-color),
+        0 4px 4px var(--headline-color);
     }
   }
 }
