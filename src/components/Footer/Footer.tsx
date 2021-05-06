@@ -7,7 +7,7 @@ function Footer() {
         Made with 💕 at{' '}
         <a href="https://github.com/manishprivet/bookr" target="_blank" rel="noreferrer">
           {' '}
-          Github !
+          Github!
         </a>
       </p>
     </div>
