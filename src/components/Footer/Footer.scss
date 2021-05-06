@@ -1,5 +1,5 @@
 .footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -15,12 +15,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 400px) {
-  .footer {
-    display: block;
-    position: auto;
   }
 }
