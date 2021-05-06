@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../Forms/Forms.scss';
+import '../Forms.scss';
 
 const Signin = () => {
   const [values, setValues] = useState({
