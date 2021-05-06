@@ -4,15 +4,13 @@ import hero from '../../../assets/hero.png';
 function Hero() {
   return (
     <div className="hero">
-      <div className="text">
-        <p>
-          CHANGE YOUR
-          <br /> READING <br />
-          EXPERIENCE
-          <br />
-          <span>WITH THE POWER OF CLOUD</span>
-        </p>
-      </div>
+      <p className="text">
+        CHANGE YOUR
+        <br /> READING <br />
+        EXPERIENCE
+        <br />
+        <span className="tagline">WITH THE POWER OF CLOUD</span>
+      </p>
       <div className="books">
         <img className="books" src={hero} alt="logo" />
       </div>
