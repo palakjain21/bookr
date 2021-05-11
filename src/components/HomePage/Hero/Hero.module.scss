@@ -12,7 +12,7 @@
   .text {
     font-style: normal;
     font-weight: bold;
-    font-size: 4.5vw;
+    font-size: clamp(2em, 4.5vw, 5em);
     line-height: 1em;
     display: block;
     text-align: left;
