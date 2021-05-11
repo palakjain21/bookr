@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Forms.scss';
+import styles from '../Forms.module.scss';
 
 const Signin = () => {
   const [values, setValues] = useState({
@@ -29,11 +29,11 @@ const Signin = () => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1 className="formheading">ALREADY AN USER?</h1>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <h1 className={styles.formheading}>ALREADY AN USER?</h1>
       <input
         onChange={handleEmail}
-        className="formfield"
+        className={styles.formfield}
         type="email"
         name="email-address"
         id="email-address"
@@ -42,14 +42,14 @@ const Signin = () => {
       />
       <input
         onChange={handlePassword}
-        className="formfield"
+        className={styles.formfield}
         type="password"
         name="password"
         id="password"
         placeholder="Password"
         value={values.password}
       />
-      <input onClick={handleSubmit} className="submit" type="submit" value="SIGN IN" />
+      <input onClick={handleSubmit} className={styles.submit} type="submit" value="SIGN IN" />
     </form>
   );
 };
