@@ -1,0 +1,47 @@
+.signin {
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: var(--headline-color);
+    color: #faeee7;
+  }
+}
+
+.register {
+  margin-left: 0.6rem;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--headline-color);
+    color: #faeee7;
+  }
+}
+
+.box {
+  width: 100vw;
+  height: 15rem;
+  background-color: var(--headline-color);
+  margin-top: 0.7rem;
+  filter: contrast(60%);
+}
+
+.menu {
+  float: right;
+  margin-right: 0.9rem;
+  background-color: var(--headline-color);
+  margin-top: 1rem;
+}
+
+.menuClose {
+  float: right;
+  margin-right: 1rem;
+}
+
+.options {
+  float: left;
+  margin-top: 4rem;
+}
