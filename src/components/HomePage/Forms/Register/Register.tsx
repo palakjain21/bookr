@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Forms.scss';
+import styles from '../Forms.module.scss';
 
 const Register = () => {
   const [values, setValues] = useState({
@@ -37,11 +37,11 @@ const Register = () => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1 className="formheading"> NEW HERE?</h1>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <h1 className={styles.formheading}> NEW HERE?</h1>
       <input
         onChange={handleName}
-        className="formfield"
+        className={styles.formfield}
         type="name"
         name="name"
         id="name"
@@ -50,7 +50,7 @@ const Register = () => {
       />
       <input
         onChange={handleEmail}
-        className="formfield"
+        className={styles.formfield}
         type="email"
         name="email-address"
         id="email-address"
@@ -59,14 +59,14 @@ const Register = () => {
       />
       <input
         onChange={handlePassword}
-        className="formfield"
+        className={styles.formfield}
         type="password"
         name="password"
         id="password"
         placeholder="Password"
         value={values.password}
       />
-      <input onClick={handleSubmit} className="submit" type="submit" value="REGISTER" />
+      <input onClick={handleSubmit} className={styles.submit} type="submit" value="REGISTER" />
     </form>
   );
 };

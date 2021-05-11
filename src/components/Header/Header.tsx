@@ -1,16 +1,16 @@
-import './Header.scss';
+import styles from './Header.module.scss';
 import logo from '../../assets/logo.png';
 
 function Header() {
   return (
-    <nav className="header">
-      <div className="logo">
+    <nav className={styles.header}>
+      <div className={styles.logo}>
         <img src={logo} alt="logo" />
         <span>BOOK-R</span>
       </div>
-      <div className="navbar">
-        <p className="register ">Register</p>
-        <p className="signin ">SIGN IN</p>
+      <div className={styles.navbar}>
+        <p className={styles.register}>Register</p>
+        <p className={styles.signin}>SIGN IN</p>
       </div>
     </nav>
   );
