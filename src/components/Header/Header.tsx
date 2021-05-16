@@ -1,5 +1,7 @@
+
 import { useState} from 'react';
 import styles from  './Header.module.scss';
+
 import logo from '../../assets/logo.png';
 import {GiHamburgerMenu} from "react-icons/gi";
 import { IconContext } from 'react-icons';
@@ -12,6 +14,7 @@ function Header() {
     <div style={{ position: 'fixed'}}>
      {isMenuOpen ? <Menu isMenu={isMenuOpen} closeMenu={setMenu} /> : null}
     </div>
+
     <nav className={styles.header}>
       <div className={styles.logo}>
         <img src={logo} alt="logo" />
@@ -27,6 +30,7 @@ function Header() {
         >
           <GiHamburgerMenu className={styles.hamburger} />
         </IconContext.Provider>   
+
       </div>
     </nav>
     </>
